@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
+  
 }
 
 .header {
@@ -14,7 +14,7 @@ body {
     justify-content: space-between;
     background-color: white;
     border-bottom: 1px solid #ccc;
-    padding: 10px 20px;
+    padding: 1px 2px;
 
 }
 .header h1{
@@ -177,6 +177,8 @@ nav {
     font-size: 1rem;
     transition: background 0.3s ease, color 0.3s ease;
 }
+
+
 /* Footer Styling */
 .footer {
     display: flex;
@@ -185,12 +187,12 @@ nav {
     background-color: #02262e;
     color: #c1d9d7;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 0.3em 2em;
     font-weight: 800px;
+    margin-top: 0px;
 }
 
 .footer-left, .footer-center, .footer-right {
-    flex: 1 1 30%;
+
     min-width: 200px;
 }
 
@@ -205,7 +207,7 @@ nav {
 }
 
 .footer p {
-    margin: 0.5em 0;
+  
     line-height: 1.6;
 }
 
@@ -215,9 +217,10 @@ nav {
     text-align: center;
     font-size: 0.9em;
     padding-top: 0em;
-    border-top: 1px solid #f1efef;
+    border-top: 2px solid #f1efef;
     margin-top: 1em;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -236,6 +239,8 @@ nav {
     background: #f1c40f;
     color: #f4ebeb;
 }
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;700&display=swap');
 
@@ -328,6 +333,7 @@ h1 {
     color: #022139;
 }
 
+
 .text-container p {
     font-size: 1.2em;
     color: #010e16;
@@ -405,6 +411,7 @@ h1 {
     margin-bottom: 10px;
     text-align: center;
 }
+
 
 .text-section p {
     font-size: 1.1rem;

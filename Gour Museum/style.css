@@ -8,6 +8,7 @@
 
 body {
     font-family: Arial, sans-serif;
+  
 }
 
 .header {
@@ -179,6 +180,8 @@ nav {
     font-size: 1rem;
     transition: background 0.3s ease, color 0.3s ease;
 }
+
+
 /* Footer Styling */
 .footer {
     display: flex;
@@ -187,12 +190,12 @@ nav {
     background-color: #02262e;
     color: #c1d9d7;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 0.3em 2em;
     font-weight: 800px;
+    margin-top: 0px;
 }
 
 .footer-left, .footer-center, .footer-right {
-    flex: 1 1 30%;
+
     min-width: 200px;
 }
 
@@ -207,7 +210,7 @@ nav {
 }
 
 .footer p {
-    margin: 0.5em 0;
+  
     line-height: 1.6;
 }
 
@@ -217,9 +220,10 @@ nav {
     text-align: center;
     font-size: 0.9em;
     padding-top: 0em;
-    border-top: 1px solid #f1efef;
+    border-top: 2px solid #f1efef;
     margin-top: 1em;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -238,6 +242,9 @@ nav {
     background: #f1c40f;
     color: #f4ebeb;
 }
+
+
+
 /* hamaye home page ki css - General Styles */
 /* Slider Container */
 .slider-container {
@@ -256,7 +263,7 @@ nav {
     height: 100%;
     object-fit: cover;
     opacity: 0;
-    transition: opacity 2s ease-in-out; /* Adjusted transition time */
+    transition: opacity 1s ease-in-out; /* Adjusted transition time */
 }
 
 .slider-image.active {
@@ -295,8 +302,8 @@ section {
 }
 .container{
     background: linear-gradient(to right, #d5edc3bd, #e6f0bad1, #dbbfefb9);
-    border-radius: 30px;
-    margin: 5px;
+    border-radius: 3px;
+    margin: 2px;
 }
   .text-content {
     flex: 1;
@@ -351,9 +358,10 @@ section {
   .collection-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 8px;
+    gap: 2px;
+    padding: 15px;
     background-color: #c2cddc;
+    margin-bottom: 0px;
 }
 
 .collection-container h1 {
@@ -610,8 +618,8 @@ body {
     display: flex;
     align-items: flex-start;
     gap: 20px;
-    width: 1450px;
-    margin: 40px;
+    width: 100%;
+    margin: 12px;
 }
 
 .text-section {
@@ -871,3 +879,181 @@ p {
     font-size: 3.9rem;
     font-family: 'Times New Roman', Times, serif;
 }
+
+/* New isolated styling for the additional section */
+.tab-container-custom {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Full screen height */
+    background: url('img/background-image.jpg') no-repeat center center/cover, #333; /* Fallback color */
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tab-container-custom .background-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Overlay for contrast */
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.tab-container-custom .circle-images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Circular Image Styles */
+.tab-container-custom .circle-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+
+/* Left-side Images */
+.tab-container-custom .left-images .circle-image:nth-child(1) {
+    left: 15%;
+    top: 05%;
+}
+.tab-container-custom .left-images .circle-image:nth-child(2) {
+    left: 1%;
+    top: 35%;
+}
+.tab-container-custom .left-images .circle-image:nth-child(3) {
+    left: 15%;
+    top: 60%;
+}
+
+/* Right-side Images */
+.tab-container-custom .right-images .circle-image:nth-child(1) {
+    right: 15%;
+    top: 5%;
+}
+.tab-container-custom .right-images .circle-image:nth-child(2) {
+    right: 1%;
+    top: 35%;
+}
+.tab-container-custom .right-images .circle-image:nth-child(3) {
+    right: 15%;
+    top: 60%;
+}
+
+/* Text Content Styling */
+.tab-container-custom .text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.tab-container-custom .text-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.tab-container-custom .text-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #faf7d6f1;
+    text-align: center;
+    padding-right: 140px;
+}
+
+/* Style for the Map Section */
+.map {
+    width: 102%;
+    height: 380px; /* Set a fixed height for the map */
+    text-align: center; /* Center the map within the section */
+    margin-top: -45px;
+    margin-left: -15px;
+    margin-bottom: -45px;
+}
+
+.map iframe {
+    width: 100%; /* Make the iframe take up the full width of its container */
+    height: 100%; /* Make the iframe take up the full height of its container */
+}
+
+/* Optional: Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .map {
+        height: 300px; /* Adjust map height on smaller screens */
+    }
+}
+
+/*Donation ki css*/    
+  .containerd {
+    display: flex;
+    background-color: #fff;
+    width: 1350px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    height: 550px;
+    margin-left: 90px;
+  }
+  
+  .content-box {
+    background-color: #d3d3d3d6;
+    color: rgb(7, 7, 7);
+    padding: 70px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .content-box h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .content-box h5 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .content-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .underline {
+    width: 200px;
+    height: 4px;
+    background-color: black;
+    margin-top: 20px;
+  }
+  
+  .image-box {
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .containerde {
+    display: flex;
+    background-color: #d3d3d3d6;
+    width: 1350px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    height: 550px;
+    margin-left: 90px;
+    margin-bottom: 60px;
+  }

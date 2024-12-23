@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
           <header class="header">
               <div class="logo-container">
                   <img src="img\logo-new.png" alt="Government Logo" class="gov-logo">
@@ -14,13 +13,13 @@
               </div>
               <nav1 class="nav1-buttons">
                   <p style="padding-top: 10px; font-family: 'Times New Roman', Times, serif; font-weight: 550; font-size: 17px;">A+ Grade By NAAC</p>
-                  <img src="img\logo-new.png" alt="left logo" style="width: 60px;">
+                  <img src="img\download (2).jpg" alt="left logo" style="width: 80px;">
                 </nav1>
           </header>
     <!-- Navbar Section -->
     <nav>
         <ul class="navbar">
-            <li><a href="#home">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li class="dropdown">
                 <a href="#About">About</a>
                 <ul class="dropdown-menu">
@@ -55,13 +54,15 @@
       <img src="img\about1.jpg" alt="Slider Image 3" class="slider-image">
       <img src="img\2.png" alt="Slider Image 3" class="slider-image">
   </div>
+
   <!-- Hero Section -->
   <section id="home" class="hero-section">
     <h1>Welcome to <br>Gour <span>Sangrahalaya</span></h1>
     <h3>Explore it </h3>
 </section>
 
-      <div class="container">
+
+      <div class="container" style="width: 100%;">
         <div class="text-content">
           <h2>Visit the Museum</h2>
           <p>Valley campus ,sagar - 470003</p>
@@ -75,7 +76,34 @@
           <img src="img/home1.jpg" alt="Plan your visit" />
         </div>
       </div>
+
+      <div class="tab-container-custom">
+        <div class="background-overlay">
+            <div class="circle-images">
+                <div class="left-images">
+                    <img src="img/1.jpg" alt="Art 1" class="circle-image">
+                    <img src="img/2.jpg" alt="Art 2" class="circle-image">
+                    <img src="img/3.jpg" alt="Art 3" class="circle-image">
+                </div>
+                <div class="text-content">
+                    <h1>Explore beautiful art with <br>history and heritage </h1>
+                    <p>Step into the world of history and heritage at Gour Museum! 
+                      <br>  Explore fascinating artifacts, timeless stories, and cultural
+                      <br>  treasures that bring the past to life. Experience interactive 
+                      <br>   exhibits and innovative displays that make every visit an 
+                      <br>unforgettable journey through time."</p>
+                    
+                </div>
+                <div class="right-images">
+                    <img src="img/06.jpg" alt="Art 6" class="circle-image">
+                    <img src="img\0.0.14.jpg" alt="Art 4" class="circle-image">
+                    <img src="img/5.jpg" alt="Art 5" class="circle-image">
+                </div>
+            </div>
+        </div>
+    </div>
     
+          
       <div class="video-text-container">
         <video autoplay loop muted>
             <source src="img\pp102.mp4" type="video/mp4">
@@ -84,35 +112,42 @@
         <div class="text-content">
             <h2>See The Glimpse</h2>
             <p>
-                Discover stunning visuals and captivating stories through our videos. 
-                This space showcases the beauty and diversity of our world, brought to life in motion.
+                The Museum at Valley Campus, Sagar, is a captivating 
+                <br>      destination that immerses visitors in the life and legacy
+                <br> of Doctor Harisingh Gour. Open from Monday to Saturday,
+                <br>  10:00 AM to 6:00 PM, this enriching space showcases a 
+                <br>plethora of historical artifacts, fascinating exhibits,
+                  <br> and insightful details about the illustrious founder of
+                   <br> Dr. Harisingh Gour Vishwavidyalaya. Beyond its homage to
+                   <br> this visionary leader, the museum offers countless treasures
+                    <br>     waiting to be discovered, making it a must-visit for history
+                     <br>        enthusiasts and curious minds alike. Plan your visit and unravel
+                      <br>       the stories that define this beautiful place.
             </p>
         </div>
     </div>
-    
-    
       <div class="collection-container">
         <h1>Explore the collection</h1>
         <div class="items-wrapper">
             <div class="item">
-                <img src="img/Great Court 04.webp" alt="Egypt" />
-                <p>building</p>
+                <img src="img\5.01.jpg" alt="Egypt" />
+                <p>Building</p>
             </div>
             <div class="item">
-                <img src="img/hist2.jpg" alt="Desire, love and identity" />
+                <img src="img\5.02.png" alt="Desire, love and identity" />
                 <p>University</p>
             </div>
             <div class="item">
-                <img src="img\hbjbj.jpg" alt="Animals" />
+                <img src="img\5.03.jpg" alt="Animals" />
                 <p>Background</p>
             </div>
             <div class="item">
-                <img src="img\home1.jpg" alt="Egypt" />
-                <p>Ncc</p>
+                <img src="img\5.04.png" alt="Egypt" />
+                <p>NCC</p>
             </div>
             <div class="item">
-                <img src="img\download__2_-removebg-preview (1)-photoaidcom-cropped.png" alt="Egypt" />
-                <p>corridor</p>
+                <img src="img\5.05.jpg" alt="Egypt" />
+                <p>Corridor</p>
             </div>
         </div>
     </div>
@@ -129,9 +164,15 @@ function changeImage() {
 
 setInterval(changeImage, 5000); // Change image every 5 seconds
 </script>
-
+  <!-- Map Section -->
+  <section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8680.603183683425!2d78.77496568264726!3d23.827698911486163!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53f0bc9db8fc188e!2sDr.+Harisingh+Gour+University!5e0!3m2!1sen!2sin!4v1530796101351" 
+            frameborder="0" allowfullscreen></iframe>
+</section>
+      
 <!-- Footer Section -->
 <footer class="footer">
+    
   <div class="footer-left">
       <p>
         Website: <a href="https://www.dhsgsu.edu.in">www.dhsgsu.edu.in</a><br>
@@ -146,16 +187,13 @@ setInterval(changeImage, 5000); // Change image every 5 seconds
                           <a href="https://www.linkedin.com/in/vij0707/">Vijay Richhariya (MCA) <br></a>
                           <a href="https://www.linkedin.com/in/deepika-gupta-182614312/"> Deepika Gupta (MCA)</a><br>
               &copy;Department Of Computer Science
+            </p>
         
   </div>
 
   <div class="footer-right">
   </p>
   Website: <a href="https://www.dhsgsu.edu.in">www.dhsgsu.edu.in</a><br>
-  Email: <a href="icasb2025@gmail.com">icasb2025@gmail.com</a><br>
-  <strong> Hosted by:</strong><br>
-  DOCTOR HARISINGH GOUR VISHWAVIDYALAYA SAGAR–470003<br>
-</p>
   </div>
 
   <div class="footer-bottom">
